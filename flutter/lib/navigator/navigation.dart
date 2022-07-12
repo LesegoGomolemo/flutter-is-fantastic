@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_is_fantastic/navigator/routes.dart';
+import 'package:flutter_is_fantastic/screens/dashboard.dart';
 import 'package:flutter_is_fantastic/screens/login.dart';
 
 class Navigation {
@@ -10,6 +11,8 @@ class Navigation {
         switch (settings.name) {
           case Routes.LOGIN_SCREEN:
             return const Login();
+          case Routes.DASHBOARD:
+            return const Dashboard();
           default:
             return errorWidget;
         }
